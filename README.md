@@ -3,12 +3,12 @@ This tutorial is aimed for absolute beginners of docker who wish to get started 
 
 # What is Docker?
 Docker is a tool that enables you to build, run your application as an executable package along with all its dependencies:
-        - code (Your application)
-        - base os (For ex: Ubuntu/ Centos etc.)
-        - Installers (For ex: python or java)
-        - runtime libraries (For ex: packages that you install using pip for python applications / dependent jar files for java applications)
-        - environment variables
-        - configuration files.
+- code (Your application)
+- base os (For ex: Ubuntu/ Centos etc.)
+- Installers (For ex: python or java)
+- runtime libraries (For ex: packages that you install using pip for python applications / dependent jar files for java applications)
+- environment variables
+- configuration files.
 
 # Why Docker?
 - **Consistent development environment** - Your application where ever (dev/ test/ acceptance/ prod) you deploy or who ever develops, it has same os, installers, dependencies and setup.
@@ -19,16 +19,16 @@ Docker is a tool that enables you to build, run your application as an executabl
 - **Isolation** Your application is isolated from other applications running on the same platform.
 
 # Basics
-**Image** \- An image is an executable package that includes everything needed to run an application.
-**Container** \- A container is a runtime instance of an image.
-**Dockerfile** \- The file that has all the instructions on how to build an image.
+**Image** \- An image is an executable package that includes everything needed to run an application.  
+**Container** \- A container is a runtime instance of an image.  
+**Dockerfile** \- The file that has all the instructions on how to build an image.  
 
 # Installing Docker
-Please refer the official docker website for installing the docker on your machine.
-For macos and linux uses, the docker installation is going to be easy.
+Please refer the official docker website for installing the docker on your machine.  
+For macos and linux users, the docker installation is going to be easy.
 But for windows users, it is a bit tricky.
 
-# How to Build a Docker files
+# How to Build a Dockerfile
 Go through the Dockerfile in this repo which has instructions to build a simple python application.
 
 # Docker File Most used commands
