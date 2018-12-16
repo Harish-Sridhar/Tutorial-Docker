@@ -1,3 +1,5 @@
+Note: This is not a complete reference of all the commands.
+It is just a collection of most frequently used commands.
 ## FROM
 The from command sets up the base image of the image you are building.
 ```
@@ -16,6 +18,9 @@ FROM myImage:myVersion
 ## ARG
 The arg command lets you create a variable which can optionally hold a default value and you can pass values to this variable during the build time of your application.
 
+Note: ARG variables is only available for the instructions inside the Dockerfile during the docker image build.  
+Can't reference the arg variables inside the application or the container.
+
 ```
 ARG <name>[=<default value>]
 ```
@@ -27,6 +32,10 @@ ARG myvariable2="1234"
 
 ## ENV
 The env command lets you define environment variables and their values used in your application.
+
+
+Note: Unlike ARG variables, ENV variables can be referenced both for the dockerfile instructions and inside the container application.
+
 ```
 ENV <key>=<value> or ENV <key> <value>
 ```
